@@ -1,0 +1,46 @@
+.col-md-7 {
+  border-right: 2px solid #333;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+.img-content {
+  width: 240px;
+  height: 180px;
+  margin-left: 1rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.partner-info > li {
+  list-style-type: none;
+  margin-top: 1rem;
+  font-size: 16px;
+  color: #58595b;
+}
+a {
+  color: blue;
+  text-decoration:none !important;
+}
+
+.card-body {
+  background-color: rgba(80, 180, 90, 0.2);
+  border: 1px solid green;
+  
+}
+
+.col-md-4{
+  display:flex;
+
+}
+
+@media (max-width: 767px) {
+  .col-md-7 {
+    border-right: none;
+    border-bottom: 1px solid #333;
+  }
+}

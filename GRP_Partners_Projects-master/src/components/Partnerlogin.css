@@ -1,0 +1,47 @@
+
+.sub-header {
+    background-image: url("./img/logo.jpg");
+    height: 400px; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 1; 
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .btn:focus{
+    box-shadow:none !important;
+  }
+  
+  @media only screen and (max-width: 550px) and (min-width: 350px) { 
+    .bg-text{
+       width:90%;
+       padding: 0;
+       margin:0;
+
+   }
+    }

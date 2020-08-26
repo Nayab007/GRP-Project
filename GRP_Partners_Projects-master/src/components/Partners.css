@@ -1,0 +1,130 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 210px;
+    overflow: hidden;
+    margin: 1rem;
+    position: relative;
+  }
+  
+  .img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  
+  .card{
+    transition:0.5s;
+    margin-top: 1rem;
+    border:1px solid rgba(86, 198, 243,0.7);
+    
+  }
+
+.partner-text{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    padding-bottom: 5px;
+
+  }
+
+  .card-title{  
+    font-size:1rem;
+    transition:1s;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .card-text{
+    font-size: 0;
+    margin-top: 0.7rem;
+  }
+
+  .card-text > p {
+    font-size: 1rem;
+    color: #58595b;
+    margin-bottom: 0px;
+  
+  }
+
+  .card:hover{
+    border:4px solid #49853E;
+    box-shadow: -1px 2px 34px -13px rgba(54, 216, 167, 0.75);
+    transform: scale(1.05);
+    
+  }
+
+  .card-text{
+    font-size: 1rem;  
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+  .card-block{
+    margin-bottom:2rem;
+    padding:0px 1rem;
+
+  }
+  .Search-filter {
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  @media only screen and (max-width: 1210px) and (min-width: 950px) { 
+    .item{
+     
+     width: 200px;
+     height: 150px;}
+     
+
+  }
+
+  @media only screen and (max-width: 950px) and (min-width: 775px) { 
+    .item{
+    
+     width: 200px;
+     height: 140px;
+    }
+
+  }
+
+
+   @media only screen and (max-width: 776px) and (min-width: 575px) { 
+     .item{
+   
+      width: 150px;
+      height: 110px;
+    }
+     }
+ 
+   
+ 
